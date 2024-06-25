@@ -1,0 +1,325 @@
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color:gray;
+    color:white;
+    font-weight: bold;
+    
+    width: 100%;
+}
+
+.menu_bar{
+    background-color:gray;
+    height: 80px;
+    width:90%;
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    z-index: 999;
+    position:sticky;
+    top:0;
+}
+
+.menu_bar ul{
+    list-style: none;
+    display: flex;
+
+}
+
+.menu_bar ul li{
+    padding: 10px 30px;
+    position:relative;
+    margin: right 1px;;
+}
+
+.menu_bar ul li a{
+    color:darkgreen;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+
+    transition: all 0.3s;
+}
+
+.menu_bar ul li a:hover{
+    color:orangered;
+}
+
+.menu_bar ul li a span{
+    color:whitesmoke;
+    border-radius: 50%;
+    border-style: solid;
+    background-color: lightcoral;
+    border-color: lightcoral;
+    font-size: 12px;
+    border-width: 15px;
+    gap: 2px;
+    }
+
+.menu_bar ul li a:hover .dropdown_menu{
+    display:block;
+    position:absolute;
+    left: 0;
+    top:100%;
+    background-color: lightgray;
+}
+
+.menu_bar ul li a:hover .dropdown_menu ul{
+    display:block;
+    margin: 10px;
+}
+
+.menu_bar ul li a:hover .dropdown_menu ul li{
+    width:150px;
+    padding:10px;
+}
+
+.fas{
+    float:right;
+    margin-left: 10px;
+    padding-top: 3px;
+}
+
+.hero{
+    background-image: url("Gugulethu.png");
+    
+    height:100vh;
+    width:100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding:0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: 30px;
+    
+}
+
+.hero h1{
+    color: whitesmoke;
+}
+
+.hero button{
+    background-color:lightgreen;
+    color:black;
+    font-weight: 600;
+    border-width: 3px;
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.02s;
+    text-align: center;
+    
+}
+
+.hero button:hover{
+    color:seagreen;
+    background-color: lightgrey;
+}
+
+.section1{
+    padding: 40px 80px;
+}
+
+header{
+    position: sticky;
+}
+
+#services{
+    text-align: center;
+}
+
+#serives .service_container{
+    display:flex;
+    justify-content:space-between;
+    padding-top: 20px;
+    flex-direction: row;
+}
+
+#services .serv{
+    width:23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 4px solid #1ef03d;
+   
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease
+
+}
+
+#services .serv:hover{
+    box-shadow: 20px 20px 30px rgba(11, 202, 24, 0.09);
+
+}
+
+#services .serv img{
+    width:100%;
+    border-radius: 20px;
+    
+}
+
+#services .serv description{
+    text-align: start;
+    padding: 10px 0;
+}
+
+
+.section1 h1{
+    font-size: 50px;
+    font-weight: 600;
+    font-family: Arial;
+    text-decoration: underline;
+}
+
+.section1 p{
+    font-size:35px;
+    font-weight: bold;
+    color:green;
+
+}
+
+.section1 h3{
+    font-size:30px;
+    font-weight:bold;
+}
+
+.section1 i{
+    font-size: 26px;
+    border-radius: 50px;
+    border-width: 50px;
+    border: 2px solid;
+    color:limegreen;
+    bottom: 20px;
+    height :40px;
+    line-height: 40px;
+
+}
+
+.section2{
+    margin: 40px 0; 
+}
+
+#banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("banner1.png");
+    width:100%;
+    height:40vh;
+    background-size: cover;
+    background-position: center;
+
+   
+}
+
+#banner h1{
+    font-size: 80px;
+    color:orangered;
+    background-blend-mode:lighten;
+}
+
+#banner h1 span{
+    font-size: 80px;
+    color:rgb(38, 231, 38);
+    background-blend-mode:lighten;
+}
+#banner button{
+    background-color:lightgreen;
+    color:black;
+    font-weight: 600;
+    border-width: 3px;
+    font-size: 40px;
+    transition: 0.02s;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#banner button:hover{
+    background-color: black;
+    color:lightgreen;
+}
+
+#services button{
+    background-color:lightgrey;
+    color:black;
+    font-weight: 600;
+    border-width: 4px;
+    font-size: 40px;
+    transition: 0.02s;
+    cursor: pointer;
+    border-radius: 15px;  
+}
+
+.service_container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    height: fit-content;
+}
+
+.service_container img{
+  height: 250px;  
+}
+
+.sidebar{
+    background-color:gray;
+    height: 80px;
+    width:90%;
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    z-index: 999;
+    position:sticky;
+    top:0;
+}
+
+.sidebar ul{
+    list-style: none;
+    display: flex;
+
+}
+
+.sidebar ul li{
+    padding: 10px 30px;
+    position:relative;
+    margin: right 1px;;
+}
+
+.sidebar ul li a{
+    color:darkgreen;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+
+    transition: all 0.3s;
+}
+
+.sidebar a:hover{
+    color:orangered;
+}
+
+.menu_bar ul li a span{
+    color:whitesmoke;
+    border-radius: 50%;
+    border-style: solid;
+    background-color: lightcoral;
+    border-color: lightcoral;
+    font-size: 12px;
+    border-width: 15px;
+    gap: 2px;
+    }
+
+.menu_bar ul li a:hover .dropdown_menu{
+    display:block;
+    position:absolute;
+    left: 0;
+    top:100%;
+    background-color: lightgray;
+}
