@@ -4,16 +4,22 @@
     font-size: 30px;
 }
 
+body{
+    margin: 0;
+    padding: 0;
+}
+
 
 
 .menu_bar{
     background-color:gray;
     height: 80px;
-    width:90%;
+    width:100%;
     display: flex;
     justify-items: center;
     justify-content: space-between;
     padding: 0 5%;
+    box-sizing: border-box;
     z-index: 999;
     position:sticky;
     top:0;
