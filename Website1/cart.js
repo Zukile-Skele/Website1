@@ -6,6 +6,11 @@ function loadCart() {
     // Get the cart container element
     const cartContainer = document.getElementById('cart-container');
 
+    if (!cartContainer) {
+        updateCartCount();
+        return;
+    }
+
     // Clear the cart container
     cartContainer.innerHTML = '';
 
@@ -38,7 +43,10 @@ function updateCartCount() {
     const cart = JSON.parse(localStorage.getItem('cart')) || [];
 
     // Update the cart count displayed on the page
-    document.getElementById('cart-count').innerText = cart.length;
+    const cartCount = document.getElementById('cart-count');
+    if (cartCount) {
+        cartCount.innerText = cart.length;
+    }
 }
 
 // Function to update the cart total displayed on the page
@@ -50,7 +58,10 @@ function updateCartTotal() {
     const total = cart.reduce((sum, item) => sum + item.price, 0);
 
     // Update the cart total displayed on the page
-    document.getElementById('cart-total').innerText = total.toFixed(2);
+    const cartTotal = document.getElementById('cart-total');
+    if (cartTotal) {
+        cartTotal.innerText = total.toFixed(2);
+    }
 }
 
 // Function to remove an item from the cart
@@ -92,6 +103,14 @@ function handleCheckout() {
 // Load the cart when the page loads
 document.addEventListener('DOMContentLoaded', loadCart);
 
-// Set up event listener for checkout button
-document.getElementById('checkout-button').addEventListener('click', handleCheckout);
+document.addEventListener('click', (event) => {
+    const target = event.target;
+    if (!(target instanceof Element)) {
+        return;
+    }
+
+    if (target.id === 'checkout-button') {
+        handleCheckout();
+    }
+});
 

@@ -56,7 +56,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <li><a href="services.php">Services</a></li>
         <li><a href="orders.php">Orders</a></li>
         <li><a href="settings.php">Settings</a></li>
-        <li><a href="logout.php">Logout</a></li>
+        <li><a href="admin-logout.php">Log out</a></li>
     </ul>
 </div>
 <div class="content">
@@ -69,5 +69,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <button type="submit">Update Service</button>
     </form>
 </div>
+<script src="services.js"></script>
 </body>
 </html>

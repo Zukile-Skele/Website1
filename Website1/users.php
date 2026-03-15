@@ -59,4 +59,6 @@ $result = $mysqli->query($sql);
         <footer>
         <p>© 2024 Igugulethu Consulting(PTY)LTD</p>
         </footer>
-    
+    <script src="services.js"></script>
+</body>
+</html>

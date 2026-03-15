@@ -48,5 +48,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <button type="submit">Add Service</button>
         </form>
     </div>
+    <script src="services.js"></script>
 </body>
 </html>

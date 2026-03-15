@@ -24,6 +24,7 @@
         <h1 style="font-size: 50px; font-family:Arial; align-items:center;">Welcome to the <span style="color: orangered;">Admin Dashboard</span></h1>
         <img src="IGUGULETHU LOGO.png" alt="" height="300vh">
     </div>
+    <script src="services.js"></script>
 </body>
 <footer>
         <p>© 2024 Igugulethu Consulting(PTY)LTD</p>
